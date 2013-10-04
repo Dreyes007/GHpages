@@ -1,0 +1,98 @@
+<!Doctype html>
+
+<!--Daniel Reyes, ASDI 1310, HTML5 for Daniel's AVF Demo App-->
+
+<html lang="eng">
+		
+	<head>
+			
+		<meta charset="utf-8">
+			
+		<title>Daniel's AVF Demo App</title>
+			
+						
+	<!--  Mobile viewport optimized viewport -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+			
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/libs/modernizr.custom.55330.js"></script>
+		<script type="text/javascript" src="http://www.modernizr.com/downloads/modernizr-latest.js"></script>
+			
+	<!-- StyleSheets under here -->	
+		<link rel="stylesheet" href="jquery.mobile-1.3.2/jquery.mobile-1.3.2.min.css"/>
+		<link rel="stylesheet" href="css/main.css" />
+		
+	</head>
+		
+	<body>
+	
+		<!-- This is the Start Page of the Demo App -->
+		<section data-role="page" id="mainPage" class="mainUI">
+			
+			<header data-role="header" data-position="fixed">			
+				<h1>AVF Demo App</h1>				
+			</header>
+			
+			<section data-role="content">
+				<p>This Demo App will display the different content and features that will be integrated during the AVF Course</p>
+			</section>
+			
+			<section data-role="content" class="ui-bar ui-bar-d">
+				<h1>IOS / Android Native Features</h1>
+			
+				<section class="ui-bar">
+					<h2><a href="#error" data-role="button" data-inline="true" data-mini="true">Contacts with Camera & Geo-Location</a></h2>
+					<h2><a href="#error" data-role="button" data-inline="true" data-mini="true">Barcode Scanner</a></h2>
+					<h2><a href="#error" data-role="button" data-inline="true" data-mini="true">Weather</a></h2>
+					<h2><a href="#error" data-role="button" data-inline="true" data-mini="true">Calendar</a></h2>
+					<h2><a href="#error" data-role="button" data-inline="true" data-mini="true">Voice Recorder</a></h2>
+				</section>
+											
+			</section>
+			
+			<section data-role="content" class="ui-bar ui-bar-d">
+				<h1>JSON-P Data API's</h1>
+				
+				<section class="ui-bar">
+					<h2><a href="#error" data-role="button" data-inline="true" data-mini="true">The Weather Channel API</a></h2>
+					<h2><a href="#error" data-role="button" data-inline="true" data-mini="true">MMAfights API</a></h2>
+				</section>
+							
+			</section>
+			
+			<footer data-role="footer" data-position="fixed">
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#error" data-icon="edit">Week 1 Research</a></li>
+						<li><a href="#error" data-icon="edit">Week 2 Research</a></li>
+						<li><a href="#error" data-icon="edit">Week 3 Research</a></li>
+						<li><a href="#error" data-icon="edit">Week 4 Research</a></li>
+					</ul>					
+				</nav>
+			</footer>
+						
+		</section>
+		
+	<!--This guides the browse categories to an error page for the pages that are not set up yet-->
+		<section data-role="dialog" id="error">
+			<a href="#mainPage" data-rel="back" data-role="button" data-close-btn="right">
+				<h1>404 Error Page</h1>
+				<p>This page cannot be found</p>
+				<div data-role="button" data-inline="true">Ok</div>
+			</a>
+						
+		</section>
+		
+	<!-- JavaScript under here -->
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+				
+	</body>
+		
+</html>
